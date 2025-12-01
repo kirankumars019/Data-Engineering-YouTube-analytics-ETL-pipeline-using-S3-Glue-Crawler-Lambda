@@ -19,11 +19,10 @@ AWS Services Used
 1) Amazon S3 – Central data lake storing raw, cleansed, and analytics datasets.
 2) AWS IAM – Secure access control for Lambda, S3, Glue, Crawlers, and Athena.
 3) AWS Lambda – Processes raw JSON files and writes clean Parquet data to S3.
-4) AWS Glue –
-• Crawlers to classify and catalog data
-• ETL jobs to join raw & reference datasets and build the final analytics table
-5) Amazon Athena – Serverless SQL queries on S3-stored data.
-6)Amazon QuickSight – Dashboard and visualization of YouTube analytics.
+4) AWS Glue – Crawlers to classify and catalog data
+5) ETL Jobs - To join raw & reference datasets and build the final analytics table
+6) Amazon Athena – Serverless SQL queries on S3-stored data.
+7) Amazon QuickSight – Dashboard and visualization of YouTube analytics.
 
 Dataset
 The project uses the YouTube Trending Videos dataset from Kaggle.
