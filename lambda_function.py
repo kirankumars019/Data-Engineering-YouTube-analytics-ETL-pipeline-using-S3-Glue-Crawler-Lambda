@@ -22,7 +22,7 @@ def lambda_handler(event, context):
 
         print("Writing to S3 & Glue Catalog...")
 
-        # Write to S3
+        # Write data to S3 in parquet format
         wr_response = wr.s3.to_parquet(
             df=df_step_1,
             path=os_input_s3_cleansed_layer,
