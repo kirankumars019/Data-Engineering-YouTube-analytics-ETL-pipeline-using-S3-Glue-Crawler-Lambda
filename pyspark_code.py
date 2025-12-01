@@ -16,7 +16,7 @@ job = Job(glueContext)
 job.init(args['JOB_NAME'], args)
 
 # --------------------------------------------------------------------
-# Load Catalog Tables
+# Load Catalog Tables - Source
 # --------------------------------------------------------------------
 
 ref_df = glueContext.create_dynamic_frame.from_catalog(
@@ -69,7 +69,7 @@ print("Schema after join:")
 Join_node.printSchema()
 
 # --------------------------------------------------------------------
-# Write to S3 + Glue Catalog
+# Write to S3 + Glue Catalog -Target
 # --------------------------------------------------------------------
 
 sink = glueContext.getSink(
